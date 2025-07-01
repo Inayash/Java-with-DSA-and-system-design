@@ -1,0 +1,79 @@
+Ques 1:How to check if git is available on your system?
+Solution 1:To check if Git is available on system, follow these steps:
+1. Open the Command Prompt (in Windows) or Terminal (in macOS/Linux).
+2. Type the following command and press Enter:
+   git --version
+3. If Git is installed, it will show the Git version.
+4. If Git is not installed, it will show an error message.
+
+Ques 2:How to initialize a new Git repository ?
+solution 2:To initialize a new Git repository, follow these steps:
+1. First, open Command Prompt or Terminal.
+2. Go to the folder where you want to create the Git repository.
+Use the cd command to go to that folder.
+Example:cd my-project
+3. Then, type the following command and press Enter:
+   git init
+4. This command will create a new hidden folder named .git inside your project.
+It means Git is now tracking the changes in your project.
+So, git init is used to start a new Git repository.
+
+Ques 3:How to tell git about your name and email ?
+solution 3:To tell Git your name and email, use the following commands in the Command Prompt or Terminal:
+1. Set your name:
+   git config --global user.name "Your Name"
+2. Set your email:
+  git config --global user.email "your-email@example.com"
+These commands tell Git who you are. This information is saved with every commit you make.
+> Example:
+  git config --global user.name "Inayash Akhtar"
+  git config --global user.email "inayash@example.com"
+
+Ques 4:How to add a file to the staging area ?
+solution 4:To add a file to the staging area in Git, use the following command in Command Prompt or Terminal:
+          git add filename
+This command tells Git to start tracking changes of that file and prepare it for the next commit.
+> Example:
+  git add index.html
+If you want to add all files, use:
+  git add .
+This adds all the changed or new files to the staging area.
+
+Ques 5:How to remove a file from the staging area ?
+Solution 5: To remove a file from the staging area in Git, use the following command:
+            git reset filename
+This command removes the file from the staging area but does not delete the file from your folder.
+> Example:
+  git reset index.html
+This will unstage index.html, so it won’t be included in the next commit.
+If you want to unstage all files, use:
+  git reset
+
+Ques 6:How to make a commit?
+Solution 6:To make a commit in Git, use the following command in Command Prompt or Terminal:
+           git commit -m "Your message here"
+This command saves the changes from the staging area to the local repository with a message.
+> Example:
+  git commit -m "Added login page"
+The message should explain what changes you made.
+Every commit helps you keep a history of your project.
+
+Ques 7:How to send your changes to a remote repository?
+Solution 7:To send your changes to a remote repository (like GitHub), use the following command:
+           git push origin branch-name
+origin is the default name of the remote repository.
+branch-name is usually main or master.
+> Example:
+  git push origin main
+This command uploads your local commits to the remote GitHub repository.
+Note: You must first connect your local repo to a remote using:
+git remote add origin <repository-URL>
+
+Ques 8:What is the difference between clone and pull?
+solution 8:git clone	It is used to copy a remote repository to your local system for the first time. It creates a new folder with all files, branches, and commit history.
+git pull	It is used to download the latest changes from the remote repository into an existing local repository. It updates your current files and merges new commits.
+Example:
+git clone https://github.com/user/repo.git
+→ Clones the full repository.
+git pull origin main
+→ Pulls the latest changes from the main branch of the remote.
