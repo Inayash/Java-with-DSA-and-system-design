@@ -1,0 +1,36 @@
+ques1:What is Programming language?
+answer:A programming language is a formal set of instructions used to communicate with computers and create software, websites, applications, and systems.
+It provides the rules and syntax that developers use to write code, which is then interpreted or compiled into machine language for the computer to execute.
+Programming languages can be high-level,like Python,Java, or C++, which are easier for humans to understand,or low-level, like assembly language, which is closer to machine code.
+Each language has its own purpose and strengths, making it suitable for specific tasks such as web development,data analysis,game creation, or system programming.
+
+ques2:Why do we need a programming language?
+answer:We need a programming language because it allows us to communicate with computers and instruct them to perform specific tasks.
+Computers do not understand human language,so programming languages act as a bridge between humans and machines.
+They help us write clear, logical instructions that computers can follow to solve problems, automate tasks, process data, build software, control devices, and much more.
+Without programming languages, we would not be able to create websites, apps, games, or operate modern technologies.
+In short, programming languages make it possible to harness the power of computers to improve our daily lives and work.
+
+ques3:What are the features of Java?
+answer:basic features of java:
+(i)simple (ii)object oriented (iii)portable (iv)platfrom independent (v)WORA: write once,run anywhere 
+
+ques4:What is an Object?
+answer:an object is an entity with state and behaviour.
+
+ques5:What is a class?
+answer:a class is a collection of objects that have similar traits,behaviours,and attributes.
+
+ques6:Explain about the main() method in Java?
+answer:In Java, the main() method is the entry point of any standalone Java application.When you run a Java program,the Java Virtual Machine (JVM) looks for the main() method to start the execution.
+Syntax:
+public static void main(String[] args) {
+    // Code to be executed
+}
+Explanation of each part:
+public: The method is accessible from anywhere.
+static: The method can be called without creating an object of the class.
+void: The method does not return any value.
+main: The name of the method recognized by JVM as the starting point.
+String[] args: It accepts an array of String arguments from the command line.
+Without the main() method, a Java program won't run unless it's part of a framework (like JavaFX or a servlet) that defines another entry point.
