@@ -37,7 +37,7 @@ This repository is organized to help me revise concepts effectively:
 
 - 📧 Email:inayashakhtar1712@gmail.com
 - 🌐 LinkedIn: 
-- 📌 GitHub:
+- 📌 GitHub:https://github.com/Inayash/Java-with-DSA-and-system-design
 
 > “Small progress every day leads to big results.”  
 Thanks for visiting!
