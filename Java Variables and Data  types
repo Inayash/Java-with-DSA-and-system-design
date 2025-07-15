@@ -1,0 +1,78 @@
+ques1:What is statically typed and Dynamically typed Programming Language?
+answer:In statically typed languages:
+Variable types are declared explicitly and checked at compile-time.
+Once a variable is declared with a type, it cannot hold values of another type unless explicitly cast.
+Type-related errors are caught before the program runs.
+Examples:
+int number = 5;      // Valid
+number = "hello";    // ❌ Compile-time error (type mismatch)
+Common statically typed languages:Java,C,C++
+
+In dynamically typed languages:
+Variable types are determined at runtime, not declared in advance.
+The same variable can hold values of different types at different times.
+Type errors are caught during execution, not compilation.
+Examples:
+x = 5          # x is an integer
+x = "hello"    # Now x is a string
+Common dynamically typed languages:Python,JavaScript
+
+ques2:What is the variable in Java?
+answer:a variable is a named container used to store data that can be changed during the execution of a program.
+Each variable in Java has a data type,which determines the kind of value it can hold,such as int for integers, double for decimals, or String for text.
+Variables must be declared before they are used, and their type cannot change after declaration.
+Example:
+int age = 25;         // age is a variable of type int
+
+ques3:How To Assign a Value To Variable?
+answer:to assign a value to a variable, declare the variable type, write the variable name, then use = followed by the value. End with a semicolon.
+Example:
+int age = 25;
+String name = "Alice";
+
+ques4:What are Primitive Data types in Java?
+answer:Primitive data types in Java are the most basic data types that store simple values directly.They are predefined by the language and are not objects.
+Java has 8 primitive data types:
+byte — 8-bit integer (-128 to 127)
+short — 16-bit integer (-32,768 to 32,767)
+int — 32-bit integer (-2^31 to 2^31-1)
+long — 64-bit integer (-2^63 to 2^63-1)
+float — 32-bit floating-point number (decimal)
+double — 64-bit floating-point number (decimal)
+char — 16-bit Unicode character
+boolean — represents true or false
+These types are efficient and hold simple values, unlike objects that store references.
+
+ques5:What are the Identifiers in Java?
+Identifiers in Java are names used to identify variables, methods, classes, and other elements.
+They must start with a letter (A-Z or a-z), an underscore (_), or a dollar sign ($), but cannot start with a digit.
+Identifiers can contain letters, digits, underscores, and dollar signs.
+They are case-sensitive and cannot be Java reserved keywords like int or class.
+Examples of valid identifiers include myVar, _count, and $value.
+Invalid examples are 123abc or class.
+
+ques6:List the Operators in Java?
+answer:operators in java
+1.Arithmetic Operators
+2.Relational Operators
+3.Logical Operators
+4.Assignment Operators
+5.Unary Operators
+6.Bitwise Operators
+
+ques7:Explain about Increment and Decrement operators and give an examples?
+answer:Increment and Decrement operators in Java are unary operators used to increase or decrease the value of a variable by 1.
+Types:Increment (++): Adds 1 to the variable.
+Decrement (--): Subtracts 1 from the variable.
+Forms:
+Prefix (++var or --var): The value is changed before it’s used in the expression.
+Postfix (var++ or var--): The value is changed after it’s used in the expression.
+Examples:
+int x = 5;
+int y = ++x;  // Prefix increment: x becomes 6, then y = 6
+int a = 5;
+int b = a++;  // Postfix increment: b = 5, then a becomes 6
+int m = 10;
+int n = --m;  // Prefix decrement: m becomes 9, then n = 9
+int p = 10;
+int q = p--;  // Postfix decrement: q = 10, then p becomes 9
