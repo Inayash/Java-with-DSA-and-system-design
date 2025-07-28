@@ -1,0 +1,60 @@
+ques1:How to Create an Object in Java?
+answer:Creating an object in Java involves instantiating a class using the new keyword.
+ClassName objectName = new ClassName();
+
+ques2:What is the use of a new keyword in Java?
+answer:In Java, the new keyword is used to create (instantiate) new objects from a class.
+It dynamically allocates memory for the object and calls the constructor of the class.
+Key Uses of new Keyword:
+(i)Creates a new object in memory.
+(ii)Calls the constructor of the class to initialize the object.
+(iii)Returns a reference to the newly created object.
+example:ClassName obj = new ClassName();
+
+ques3:What are the different types of variables in Java?
+In Java, variables are containers for storing data values.
+Based on their scope,lifetime, and declaration,Java has three main types of variables:
+(i) local variables
+(ii)Instance vaariable(non-static fields)
+(iii)Static variables(class variables)
+
+ques4:What is the difference between Instance variable and Local variables?
+Instance Variables vs Local Variables
+Feature                           Instance Variable	                                          Local Variable
+Where Declared	                  Inside a class but outside any method or constructor	      Inside a method, constructor, or block
+Scope	                            Available to all methods in the class	                      Limited to the method or block where it is declared
+Memory Allocation	                On object creation (heap memory)	                          On method call (stack memory)
+Default Value	                    Automatically initialized (e.g., 0, null, false)	          Must be manually initialized before use
+Access Modifier Allowed	          Yes (e.g., private, public)	                                No (they are not accessible outside the method)
+Belongs To	                      Belongs to the object (instance) of the class	              Belongs only to the method/block
+
+
+ques5:In which area memory is allocated for instance variable and local variable?
+answer:Memory Allocation in Java:
+1.Instance Variables
+Allocated in: Heap memory
+Why: Because instance variables belong to an object, and all objects in Java are stored on the heap.
+When: Memory is allocated when you create an object using new.
+example:
+public class Car {
+    String color; // instance variable (stored in heap)
+}
+
+2.Local Variables
+Allocated in: Stack memory
+Why: Local variables exist only during the execution of the method, and stack memory is used for method calls and local execution context.
+When: Memory is allocated when the method is called, and deallocated when the method finishes.
+example:
+public void drive() {
+    int speed = 60; // local variable (stored in stack)
+}
+
+ques6:What is method overloading?
+answer:Method Overloading means defining multiple methods with the same name in the same class but with different parameters (type, number, or order).
+It's a way to make your code more readable, flexible, and reusable.
+Rules for Method Overloading
+Two methods are considered overloaded if they:
+(i)Have the same name
+(ii)Have different parameter lists (either number, type, or order)
+(iii)May or may not have different return types (but return type alone is NOT enough)
+
