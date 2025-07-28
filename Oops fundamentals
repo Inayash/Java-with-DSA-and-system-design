@@ -22,10 +22,10 @@ ques4:What is the difference between Instance variable and Local variables?
 Instance Variables vs Local Variables
 Feature                           Instance Variable	                                          Local Variable
 Where Declared	                  Inside a class but outside any method or constructor	      Inside a method, constructor, or block
-Scope	                            Available to all methods in the class	                      Limited to the method or block where it is declared
-Memory Allocation	                On object creation (heap memory)	                          On method call (stack memory)
-Default Value	                    Automatically initialized (e.g., 0, null, false)	          Must be manually initialized before use
-Access Modifier Allowed	          Yes (e.g., private, public)	                                No (they are not accessible outside the method)
+Scope	                          Available to all methods in the class	                      Limited to the method or block where it is declared
+Memory Allocation	              On object creation (heap memory)	                          On method call (stack memory)
+Default Value	                  Automatically initialized (e.g., 0, null, false)	          Must be manually initialized before use
+Access Modifier Allowed	          Yes (e.g., private, public)	                              No (they are not accessible outside the method)
 Belongs To	                      Belongs to the object (instance) of the class	              Belongs only to the method/block
 
 
