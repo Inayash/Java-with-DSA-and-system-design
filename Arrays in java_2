@@ -1,0 +1,107 @@
+ques1:What is the default value of Array for different data types?
+answer:In Java, when you create an array without initializing its elements,the default values are automatically assigned based on the data type of the array.
+Here's a table of the default values for different data types in Java arrays:
+| Data Type      | Default Value             |
+| ---------------| --------------------------|
+| byte           | 0                         |
+| short          | 0                         |
+| int            | 0                         |
+| lon`           | 0L                        |
+| float          | 0.0f                      |
+| double         | 0.0d                      |
+| char           | \u0000 (null character)   |
+| boolean        | false                     |
+| Object types   | null                      |
+
+ques2:Can you pass the negative number in Array size?
+answer:No, you cannot pass a negative number as the size of an array in Java.
+If you try to do so,the Java program will compile,but it will throw a NegativeArraySizeException at runtime.
+
+ques3:Where does Array stored in JVM memory?
+answer:In Java, arrays are stored in the heap memory of the JVM.
+Heap Memory:
+All objects in Java are stored in the heap,and arrays are treated as objects,regardless of their type (primitive or reference).
+This includes arrays like int[], double[], String[], etc.
+Even a char[] or int[] is considered an object and stored in the heap.
+
+ques4:What are the disadvantages of Array?
+answer:(i)Once we create the size cannot be increased/decreased.
+(ii)It stores only homogeneous data elememts.
+
+ques5:What is an Anonymous Array in Java ? Give an example?
+answer:(i)An Array without a name is called Anonymous Array.
+(ii)This type of array is created just for instance use.
+example:
+class Calc
+{
+ 	public int add(int nums[])
+	{
+		int result=0;
+		for(int n:nums)
+		{
+			result=result+n;
+		}
+		return result;
+	}
+}
+public class anonymousArray{
+	public static void main(String[] args){
+
+	Calc obj= new Calc();
+	int nums[]={5,2,3,7,8,2};
+	int result=obj.add(nums);
+	System.out.println(result);
+	}
+}
+
+ques6:What are the different ways to traverse an Array in java?
+answer:In Java, there are several ways to traverse (iterate through) an array
+1. Using a for loop (classic way):
+int[] arr = {10, 20, 30, 40};
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+}
+
+2. Using an enhanced for-each loop:
+for (int num : arr) {
+    System.out.println(num);
+}
+
+3. Using a while loop:
+int i = 0;
+while (i < arr.length) {
+    System.out.println(arr[i]);
+    i++;
+}
+
+ques7:What is the difference between length and length() method Give an Examples?
+answer:differnece between length and length():
+length:It is the property of the Array type class.
+//for 1-D Array
+public class lengthArray{
+	public static void main(String[] args){
+	int nums[]={4,7,2,6};
+	System.out.println(nums.length);
+	}
+}
+output:4
+//for 2-D Array
+public class lengthArray{
+	public static void main(String[] args){
+	int nums[][]={
+				{3,9,7,5},
+				{1,5,6,5},
+				{8,4,5,6}
+				};
+	System.out.println(nums[0].length);
+	}
+}
+output:4
+length():It is method of string class.
+public class lengthString{
+	public static void main(String[] args){
+	String name= "Inaya";
+	System.out.println(name.length());
+	}
+}
+output:5
